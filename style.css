@@ -1,0 +1,460 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+}
+
+.image {
+  /* background-image: url(effect.gif); */
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 78%;
+  width: 40%;
+  position: absolute;
+  top: 52px;
+  left: 381px;
+  animation: bg 2s ease 4.7s;
+  animation-fill-mode: backwards;
+  opacity: 0.8;
+  backface-visibility: hidden;
+  transform: rotate(360deg);
+  z-index: -10;
+}
+
+.parent {
+  width: 2px;
+  height: 300px;
+  background-color: #39ff14;
+  position: absolute;
+  left: 649px;
+  top: 151px;
+  animation: animation2 2s 1s;
+  transform: rotate(280deg);
+  opacity: 0;
+  box-shadow: 0 0 100px #42bdfa;
+}
+
+.parent2 {
+  width: 300px;
+  height: 300px;
+  position: absolute;
+  left: 505px;
+  top: 151px;
+  /* clip-path: circle(50% at 50% 50%); */
+  border: 5px solid #39ff14;
+  border-radius: 1000px;
+  animation: animation1 1s ease 2s;
+  animation-fill-mode: backwards;
+  box-shadow: 0 0 100px #39ff14;
+}
+
+.parent3 {
+  width: 300px;
+  height: 300px;
+  position: absolute;
+  left: 505px;
+  top: 151px;
+  /* clip-path: circle(50% at 50% 50%); */
+  border: 5px solid #39ff14;
+  animation: animation3 1s ease 2.6s;
+  animation-fill-mode: backwards;
+  transform: scale(1.2);
+  box-shadow: 0 0 100px #39ff14;
+}
+
+.parent4 {
+  width: 300px;
+  height: 300px;
+  position: absolute;
+  left: 504px;
+  top: 151px;
+  /* clip-path: circle(50% at 50% 50%); */
+  border: 5px solid #39ff14;
+  animation: animation4 1s ease 3.2s;
+  animation-fill-mode: backwards;
+  transform: rotate(315deg) scale(1.2);
+  z-index: -1;
+  box-shadow: 0 0 20px #39ff14;
+}
+
+.parent5 img {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  left: 555px;
+  top: 201px;
+  border: 5px solid #39ff14;
+  border-radius: 50%;
+  animation: animation1 1s ease 2s;
+  animation-fill-mode: backwards;
+  box-shadow: 0 0 100px #39ff14;
+  transition: all 1s;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.parent5:hover {
+  background-color: #88fa428e;
+  box-shadow: 0 0 100px #42bdfa;
+  cursor: pointer;
+}
+
+.parent5:active {
+  border: 1px solid #88fa428e;
+  background-color: #88fa428e;
+  box-shadow: 0 0 100px #42bdfa;
+  cursor: pointer;
+}
+
+.circles {
+  display: inline-block;
+  width: 300px;
+  height: 300px;
+  position: relative;
+  left: 505px;
+  top: 151px;
+  transform: rotate(360deg) scale(1.2);
+  animation: animation5 3s 4s;
+  animation-fill-mode: backwards;
+  backface-visibility: hidden;
+}
+
+.c1 {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  left: 33%;
+  top: -13%;
+  border: 5px solid #39ff14;
+  border-radius: 1000px;
+  box-shadow: 0 0 20px #39ff14;
+  transition: all 0.7s;
+  z-index: 3;
+}
+
+.c1:hover {
+  transform: scale(1.5);
+  border: 1px solid #88fa428e;
+  background-color: #88fa428e;
+  box-shadow: 0 0 100px #42bdfa;
+  cursor: pointer;
+}
+
+.c2:hover {
+  transform: scale(1.5);
+  border: 1px solid #88fa428e;
+  background-color: #88fa428e;
+  box-shadow: 0 0 100px #42bdfa;
+  cursor: pointer;
+}
+
+.c3:hover {
+  transform: scale(1.5);
+  border: 1px solid #88fa428e;
+  background-color: #88fa428e;
+  box-shadow: 0 0 100px #42bdfa;
+  cursor: pointer;
+}
+
+.c4:hover {
+  transform: scale(1.5);
+  border: 1px solid #88fa428e;
+  background-color: #88fa428e;
+  box-shadow: 0 0 100px #42bdfa;
+  cursor: pointer;
+}
+
+.c5:hover {
+  transform: scale(1.5);
+  border: 1px solid #88fa428e;
+  background-color: #88fa428e;
+  box-shadow: 0 0 100px #42bdfa;
+  cursor: pointer;
+}
+
+.c6:hover {
+  transform: scale(1.5);
+  border: 1px solid #88fa428e;
+  background-color: #88fa428e;
+  box-shadow: 0 0 100px #42bdfa;
+  cursor: pointer;
+}
+
+.c2 {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  left: 77%;
+  top: 11%;
+  border: 5px solid #39ff14;
+  border-radius: 1000px;
+  box-shadow: 0 0 20px #39ff14;
+  transition: all 0.7s;
+  /* animation: circles 5s ease 6s;
+    animation-fill-mode: backwards;
+    background-color: orange; */
+}
+.c1:hover::before {
+  content: "Home";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #000000;
+}
+.c2:hover::before {
+  content: "About";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #000000;
+}
+.c3:hover::before {
+  content: "Portfolio";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #000000;
+}
+.c4:hover::before {
+  content: "Skills";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #000000;
+}
+.c5:hover::before {
+  content: "Certificates";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #000000;
+}
+.c6:hover::before {
+  content: "Contact";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #000000;
+}
+.c1 a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+}
+.c2 a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+}
+.c3 a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+}
+.c4 a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+}
+.c5 a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+}
+.c6 a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+}
+.c3 {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  right: 77%;
+  top: 11%;
+  border: 5px solid #39ff14;
+  border-radius: 1000px;
+  box-shadow: 0 0 20px #39ff14;
+  transition: all 0.7s;
+  /* animation: circles 5s ease 6s;
+    animation-fill-mode: backwards;
+    background-color: orange; */
+}
+
+.c4 {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  left: 33%;
+  top: 80%;
+  border: 5px solid #39ff14;
+  border-radius: 1000px;
+  box-shadow: 0 0 20px #39ff14;
+  transition: all 0.7s;
+  /* animation: circles 5s ease 6s;
+    animation-fill-mode: backwards;
+    background-color: orange; */
+}
+
+.c5 {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  left: -7%;
+  top: 60%;
+  border: 5px solid #39ff14;
+  border-radius: 1000px;
+  box-shadow: 0 0 20px #39ff14;
+  transition: all 0.7s;
+  /* animation: circles 5s ease 6s;
+    animation-fill-mode: backwards;
+    background-color: orange; */
+}
+
+.c6 {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  left: 74%;
+  top: 60%;
+  border: 5px solid #39ff14;
+  border-radius: 1000px;
+  box-shadow: 0 0 20px #39ff14;
+  transition: all 0.7s;
+  /* animation: circles 5s ease 6s;
+    animation-fill-mode: backwards;
+    background-color: orange; */
+}
+
+@keyframes bg {
+  0% {
+    transform: rotate(-360deg);
+    opacity: 0;
+  }
+
+  10% {
+    opacity: 0.2;
+  }
+
+  100% {
+    transform: rotate(360deg) scale(1);
+    opacity: 0.8;
+  }
+}
+
+@keyframes circles {
+  0% {
+  }
+
+  100% {
+    background-image: url(effect.gif);
+    background-size: cover;
+    background-position: center;
+    filter: blur(0) brightness(80%);
+    transform: scale(2);
+  }
+}
+
+@keyframes animation5 {
+  0% {
+    transform: rotate(-360deg) scale(1.1);
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    transform: rotate(360deg) scale(1.2);
+  }
+}
+
+@keyframes animation4 {
+  0% {
+    transform: rotate(360deg) scale(1.2);
+    opacity: 0;
+  }
+
+  100% {
+    transform: rotate(315deg) scale(1.2);
+  }
+}
+
+@keyframes animation1 {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes animation2 {
+  0% {
+    transform: rotate(0);
+    height: 0px;
+    opacity: 1;
+  }
+
+  50% {
+    transform: rotate(0);
+    height: 300px;
+    opacity: 1;
+  }
+
+  100% {
+    transform: rotate(280deg);
+    height: 300px;
+  }
+}
+
+@keyframes animation3 {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+
+  100% {
+    transform: scale(1.2);
+    opacity: 1;
+    height: 300px;
+  }
+}
+
+/* .parent .box1 {
+    background-color: red;
+    height: 100px;
+} */
