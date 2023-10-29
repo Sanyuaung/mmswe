@@ -99,8 +99,11 @@ body {
   justify-content: center;
   align-items: center;
 }
+.parent5 img:hover {
+  transform: scale(1.5);
+}
 
-.parent5:hover {
+/* .parent5:hover {
   background-color: #88fa428e;
   box-shadow: 0 0 100px #42bdfa;
   cursor: pointer;
@@ -111,7 +114,7 @@ body {
   background-color: #88fa428e;
   box-shadow: 0 0 100px #42bdfa;
   cursor: pointer;
-}
+} */
 
 .circles {
   display: inline-block;
